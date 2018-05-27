@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test-method Suite">
+
+    <test name="Run tests single">
+        <classes>
+            <class name="com.testrtc.api.simpleExamples.SingleTestExample"/>
+        </classes>
+    </test>
+
+    <test name="Run tests parametrized">
+        <classes>
+            <class name="com.testrtc.api.simpleExamples.ParametrizedTestExample"/>
+        </classes>
+    </test>
+
+    <test name="Test agent information">
+        <classes>
+            <class name="com.testrtc.api.simpleExamples.RetrieveTestAgentInfoExample"/>
+        </classes>
+    </test>
+</suite>

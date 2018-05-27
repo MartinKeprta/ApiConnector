@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test-method Suite">
+
+    <test name="API TestRTCTest : Production">
+
+        <parameter name="apiKey" value="3a41f52a-d9ad-4b2d-8cfd-4c5756a96433"/>
+        <parameter name="baseUrl" value="https://api.testrtc.com/v1/"/>
+        <parameter name="testId" value="5a82d58a77a5940011f64e6a"/>
+
+        <classes>
+            <class name="com.testrtc.api.smokeTests.positive.StatusTest"/>
+            <class name="com.testrtc.api.smokeTests.positive.TestRunTest"/>
+        </classes>
+    </test>
+
+
+    <test name="API TestRTCTest : Staging">
+
+        <parameter name="apiKey" value="b47c2634-17aa-4210-b47b-5aa4b9825a92"/>
+        <parameter name="baseUrl" value="https://kong2.testrtc.com/v1st/"/>
+        <parameter name="testId" value="5b0aad54d14dd10010e20340"/>
+
+        <classes>
+            <class name="com.testrtc.api.smokeTests.positive.StatusTest"/>
+            <class name="com.testrtc.api.smokeTests.positive.TestRunTest"/>
+        </classes>
+    </test>
+
+
+</suite>
